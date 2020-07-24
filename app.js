@@ -7,14 +7,6 @@ const config = require('./utils/config')
 const blogsRouter = require('./controllers/blogs') 
 
 logger.info('connecting to', config.MONGODB_URI)
-// const blogSchema = mongoose.Schema({
-//   title: String,
-//   author: String,
-//   url: String,
-//   likes: Number
-// })
-
-// const Blog = mongoose.model('Blog', blogSchema)
 
 const mongoUrl = config.MONGODB_URI
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
