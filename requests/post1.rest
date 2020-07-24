@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "title": "Slush: Probably the best conference in the world",
+    "author": "FundingBox",
+    "url": "https://medium.com/fundingbox-blog/slush-probably-the-best-conference-in-the-world-42329215c612",
+    "likes": 10
+}
