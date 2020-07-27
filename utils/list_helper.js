@@ -4,7 +4,7 @@ const dummy = (blogs) => {
 
 const totalLikes = (blogs) => {
   const reducer = (accumulator, current) => {
-    console.log(accumulator)
+    // console.log(accumulator)
     return accumulator + current.likes
   }
 
