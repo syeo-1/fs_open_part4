@@ -1,6 +1,6 @@
 // const Note = require('../models/blog')
 
-const initialNotes = [
+const initialBlogs = [
   {
     'title': 'Slush: Probably the best conference in the world',
     'author': 'FundingBox',
@@ -18,5 +18,5 @@ const initialNotes = [
 ]
 
 module.exports = {
-  initialNotes
+  initialBlogs
 }

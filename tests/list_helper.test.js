@@ -1,4 +1,17 @@
 const listHelper = require('../utils/list_helper')
+const testHelper = require('./test_helper')
+const Blog = require('../models/blog')
+
+beforeEach(async() => {
+  await Blog.deleteMany({})
+
+  const blogObjects = testHelper.initialBlogs
+    .map(blog => new Blog(blog)) 
+  
+  const promiseArray = blogObjects.map(blog => blog.save())
+  await Promise.all(promiseArray)
+
+})
 
 test('dummy returns one', () => {
   const blogs = []
