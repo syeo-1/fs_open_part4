@@ -9,7 +9,7 @@ const blogsRouter = require('./controllers/blogs')
 logger.info('connecting to', config.MONGODB_URI)
 
 const mongoUrl = config.MONGODB_URI
-mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false})
 
 app.use(cors())
 app.use(express.json())
