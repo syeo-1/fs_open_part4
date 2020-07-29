@@ -82,6 +82,24 @@ describe('deleting a single blog', () => {
   })
 })
 
+describe('updating a single blog', () => {
+  test('succeed with 200 status code if id is valid', async() => {
+    const startingBlogs = await testHelper.blogsInDB()
+    const blogToUpdate = startingBlogs[1]
+    const updatedBlog = new Blog({ ...blogToUpdate, likes: 200 })
+
+    await api
+      .put(`/api/blogs/${blogToUpdate.id}`)
+      .send(updatedBlog)
+      .expect(200)
+
+    const endingBlogs = await testHelper.blogsInDB()
+    const updatedBlogEnd = endingBlogs.filter(blog => blog.id === blogToUpdate.id)[0]
+    
+    expect(updatedBlogEnd.likes).toBe(updatedBlog.likes)
+  })
+})
+
 afterAll(() => {
   mongoose.connection.close()
 })
