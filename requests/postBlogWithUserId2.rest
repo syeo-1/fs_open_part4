@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "title": "2020 technology industry outlook",
+    "author": "Deloitte",
+    "url": "https://www2.deloitte.com/us/en/pages/technology-media-and-telecommunications/articles/technology-industry-outlook.html",
+    "likes": 100,
+    "userId": "5f279e5d9be5a91ce542c84b"
+}

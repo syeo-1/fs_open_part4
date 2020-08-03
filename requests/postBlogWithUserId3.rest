@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "title": "Understanding the Fundamentals of State in React",
+    "author": "Edmond Atto",
+    "url": "https://medium.com/the-andela-way/understanding-the-fundamentals-of-state-in-react-79c711be677f",
+    "likes": 9,
+    "userId": "5f279e5d9be5a91ce542c84b"
+}
