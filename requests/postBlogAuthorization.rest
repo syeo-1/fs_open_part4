@@ -1,0 +1,10 @@
+post http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkppbW15IiwiaWQiOiI1ZjI3OWRkZTliZTVhOTFjZTU0MmM4NGEiLCJpYXQiOjE1OTY0ODM2NzB9.yGEZMNBMaOn27xo5D5v_T6LHWtEGTwMMuDpU1m4Zmqs
+
+{
+    "title": "The Chicken and Egg problem (Tinder, Airbnb, Uber)",
+    "author": "molfar.io",
+    "url": "https://medium.com/@molfar.io/the-chicken-and-egg-problem-tinder-airbnb-uber-molfar-io-1ac2b8eeb61",
+    "likes": 45
+}
